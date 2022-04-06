@@ -1,0 +1,485 @@
+@charset "UTF-8";
+@font-face {
+  font-family: CormorantInfant;
+  font-display: swap;
+  src: url("../fonts/CormorantInfant-Bold.woff2") format("woff2"), url("../fonts/CormorantInfant-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: CormorantInfant;
+  font-display: swap;
+  src: url("../fonts/CormorantInfant-BoldItalic.woff2") format("woff2"), url("../fonts/CormorantInfant-BoldItalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: CormorantInfant;
+  font-display: swap;
+  src: url("../fonts/CormorantInfant-Regular.woff2") format("woff2"), url("../fonts/CormorantInfant-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: CormorantInfant;
+  font-display: swap;
+  src: url("../fonts/CormorantInfant-Medium.woff2") format("woff2"), url("../fonts/CormorantInfant-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: MontserratAlternates;
+  font-display: swap;
+  src: url("../fonts/MontserratAlternates-Bold.woff2") format("woff2"), url("../fonts/MontserratAlternates-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: MontserratAlternates;
+  font-display: swap;
+  src: url("../fonts/MontserratAlternates-Regular.woff2") format("woff2"), url("../fonts/MontserratAlternates-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+a:active {
+  color: black;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: MontserratAlternates;
+  font-weight: 400;
+  cursor: default;
+}
+
+.container {
+  max-width: 1320px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 25px 0 29px;
+}
+
+.header--body {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  position: relative;
+}
+.header--body::after {
+  position: absolute;
+  bottom: -29px;
+  left: 0;
+  content: "";
+  background-color: #2e77e4;
+  height: 2px;
+  width: 630px;
+}
+
+.header--img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #c4c4c4;
+}
+
+.header--right-blok {
+  display: flex;
+  flex-direction: column;
+  gap: 22.5px;
+}
+
+.nav--links {
+  display: flex;
+  gap: 40px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2c2c2c;
+}
+
+.nav--link a:hover {
+  color: #424242;
+}
+
+.contacts {
+  display: flex;
+  gap: 45px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2c2c2c;
+}
+.contacts a:hover {
+  color: #464646;
+}
+
+.hero {
+  padding-top: 82px;
+}
+
+.hero--img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.hero--title {
+  max-width: 850px;
+  font-family: "CormorantInfant";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 135%;
+  color: #2c2c2c;
+  cursor: default;
+  margin-bottom: 60px;
+}
+
+.hero--title-decorated {
+  color: #2e77e4;
+  font-weight: 700;
+  position: relative;
+  cursor: url("../img/1920/header/HandPointing.svg"), pointer;
+}
+.hero--title-decorated::after {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  content: "";
+  background-color: #2e77e4;
+  width: 100%;
+  height: 3px;
+}
+.hero--title-decorated:hover {
+  color: #0f4ead;
+}
+.hero--title-decorated:hover:after {
+  background-color: #0f4ead;
+}
+
+.hero--title-decorated-italic {
+  font-style: italic;
+}
+
+.hero--services {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 31px;
+  list-style-type: "— ";
+  font-size: 24px;
+  line-height: 150%;
+  color: #2c2c2c;
+  margin-bottom: 28px;
+  position: relative;
+}
+.hero--services::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-65%);
+  content: "Помогаю:";
+  font-family: "CormorantInfant";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 135%;
+  color: #a4c7fc;
+}
+
+.btn {
+  box-shadow: 0px 14px 62px rgba(46, 119, 228, 0.6);
+  background: #2e77e4;
+  outline: none;
+  padding: 30px 10px;
+  border: none;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  cursor: pointer;
+  transition: all 0.1s ease-out;
+}
+.btn span {
+  font-family: "MontserratAlternates";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+}
+.btn:hover {
+  background: #1b65d3;
+}
+.btn:active {
+  box-shadow: 0px 2px 10px rgba(46, 119, 228, 0.6);
+  background: #2e77e4;
+}
+
+.hero--btn {
+  position: relative;
+  left: 12px;
+  margin-bottom: 80px;
+}
+
+.button-slanted {
+  -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+.button-slanted-content {
+  -ms-transform: skewX(20deg);
+  -webkit-transform: skewX(20deg);
+  transform: skewX(20deg);
+  display: inline-block;
+}
+
+.button-fixedwidth {
+  min-width: 305px;
+}
+
+.hero--achievement {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 50px;
+  row-gap: 60px;
+  flex-wrap: wrap;
+}
+
+.achievement--items {
+  display: flex;
+  flex-direction: column;
+  gap: 5;
+  flex: 1 0 auto;
+}
+
+.achievement--title {
+  font-family: "CormorantInfant";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 135%;
+  text-transform: uppercase;
+  color: #2c2c2c;
+}
+
+.achievement--descr {
+  font-family: "CormorantInfant";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 100%;
+  color: #2e77e4;
+}
+
+.help {
+  padding-top: 235px;
+}
+
+.help-boby {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.help--title {
+  font-family: "CormorantInfant";
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 135%;
+  color: #2c2c2c;
+}
+
+.help--title-decorated {
+  font-weight: 700;
+  font-style: italic;
+  color: #2e77e4;
+}
+
+.help--table {
+  border: 2px solid #2e77e4;
+  border-radius: 10px;
+  border-spacing: 0;
+}
+
+.table--column,
+.table--row {
+  border-bottom: 2px solid #2e77e4;
+  padding: 30px;
+}
+
+.table--column:first-child {
+  border-right: 2px solid #2e77e4;
+}
+
+.table--row:last-child > td {
+  border-bottom: none;
+}
+
+.table--column:last-child {
+  position: relative;
+}
+
+.table--column-padding {
+  padding: 0;
+}
+
+.info-block--title {
+  font-family: "CormorantInfant";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 135%;
+  text-transform: uppercase;
+  color: #2c2c2c;
+  margin-bottom: 20px;
+}
+
+.list {
+  display: flex;
+  list-style-type: "🞄   ";
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 30px;
+  max-width: 570px;
+}
+
+.list-item {
+  font-family: "MontserratAlternates";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: #2c2c2c;
+}
+
+.help-section--button-buy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #2e77e4;
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 6px;
+  font-family: MontserratAlternates;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.benefits {
+  padding-top: 180px;
+}
+
+.benefits--title {
+  font-family: "CormorantInfant";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 135%;
+  margin-bottom: 80px;
+}
+
+.benefits--title-decorated {
+  font-weight: 700;
+  font-style: italic;
+  color: #2e77e4;
+}
+
+.benefits--blocks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.benefits--blocks:not(:last-child) {
+  margin-bottom: 80px;
+}
+
+.blocks--img {
+  width: auto;
+  display: block;
+}
+
+.blocks--text {
+  position: relative;
+  width: 540px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.blocks--text::after {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  content: "";
+  background: #2e77e4;
+  width: 100%;
+  height: 2px;
+}
+
+.blocks-text-before::before {
+  box-sizing: content-box;
+  content: attr(data-rotate-text);
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: -95px;
+  font-family: "CormorantInfant";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 135%;
+  color: #a4c7fc;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.blocks-text--title {
+  font-family: "CormorantInfant";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 135%;
+  color: #2e77e4;
+}
+
+.benefits--blocks:nth-child(odd) {
+  flex-direction: row;
+}
