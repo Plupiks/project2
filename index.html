@@ -1,490 +1,646 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
  <head>
  	<meta charset="UTF-8">
  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	<link href="https://allfont.ru/allfont.css?fonts=a_avantetitul2otl-heavy" rel="stylesheet" type="text/css" />
+ 	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
  	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
  		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
- 	<link rel="stylesheet" href="https://unpkg.com/tippy.js@5/animations/scale.css" />
- 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
- 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css">
- 	<link rel="stylesheet" type="text/css"
- 		href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
- 		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
- 	<link rel="stylesheet" type="text/css"
- 		href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
- 		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
  	<link rel="stylesheet" href="css/style.min.css">
- 	<style>
- 		.preloader {
- 			background-color: rgba(0, 0, 0, .7);
- 			color: #fff;
- 			display: none;
- 			left: 0;
- 			position: fixed;
- 			top: 0;
- 			height: 100%;
- 			width: 100%;
- 			z-index: 999;
- 			text-align: center;
- 			background: #e3ecfd url(https://10minutenwebseite.de/wp-content/plugins/quick-site-builder-master//assets/images/free-gif-preloaders-psds-03.gif) no-repeat;
- 			opacity: .7;
- 			background-position: center;
- 		}
-
- 		.preloader.active {
- 			display: block;
- 		}
-
- 		.form-group.error::after {
- 			content: '';
- 			position: absolute;
- 			bottom: 12px;
- 			left: 20px;
- 			height: 16px;
- 			width: 16px;
- 			background-image: url(https://10minutenwebseite.de/wp-content/plugins/quick-site-builder-master//assets/images/error.png);
- 		}
-
- 		.delete-uploaded-file {
- 			height: 24px;
- 			width: 24px;
- 			background: url(https://10minutenwebseite.de/wp-content/plugins/quick-site-builder-master//assets/images/delete.png) center center no-repeat;
- 			position: absolute;
- 			left: 0px;
- 			top: 30px;
- 		}
-
- 		.qsb-mfp-close {
- 			height: 24px;
- 			width: 24px;
- 			background: url(https://10minutenwebseite.de/wp-content/plugins/quick-site-builder-master//assets/images/delete.png) center center no-repeat !important;
- 			position: absolute;
- 			right: 0px;
- 			top: 0;
- 		}
- 	</style>
  	<title>Главная</title>
  </head>
 
 <body>
-	<header class="header" id="header">
-  <a class="header--logo" href="https://10minutenwebseite.de/"><span class="logo--text">Minuten Webseite</span></a>
+	<header class="header">
   <div class="container">
     <div class="header--body">
-      <button class="header--triangle"></button>
-      <p class="header--layout-name">Design-B03-demo</p>
-      <div class="header--functions functions">
-        <button class="functions--item functions--item-pc">
-          <img src="img/header/preview-icon.png" alt="preview button">
-        </button>
-        <button class="functions--item functions--item-draft">
-          <img src="img/header/savedraft-icon.png" alt="preview button">
-        </button>
-        <button class="functions--item functions--item-form">
-          <img src="img/header/saveform-icon.png" alt="preview button">
-        </button>
+      <div class="header--img">
+        <img src="" alt="photo">
+      </div>
+      <div class="header--right-blok">
+        <nav class="header--nav nav">
+          <ul class="nav--links">
+            <li class="nav--link nav--link1">
+              <label>Контакты</label>
+            </li>
+            <li class="nav--link nav--link2">
+              <label>Обо мне</label>
+            </li>
+            <li class="nav--link nav--link3">
+              <label>Отзывы</label>
+            </li>
+            <li class="nav--link nav--link4">
+              <label>О курсе</label>
+            </li>
+          </ul>
+        </nav>
+        <div class=" header--contacts contacts">
+          <a href="tel:+79995272134" class="contacts--phone">+7&nbsp;999 527-21-34</a>
+          <a href="mailto:sir.srwq@study.ru" class="contacts--mail">sir.srwq@study.ru</a>
+        </div>
+      </div>
+      <div class="burger-menu-body">
+        <nav role='navigation'>
+          <div id="menuToggle">
+            <input id="showBtn" type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+              <a class="burger-menu-link1 burger-menu-link">
+                <li>Контакты</li>
+              </a>
+              <a class="burger-menu-link2 burger-menu-link">
+                <li>Обо мне</li>
+              </a>
+              <a class="burger-menu-link3 burger-menu-link">
+                <li>Отзывы</li>
+              </a>
+              <a class="burger-menu-link4 burger-menu-link">
+                <li>О курсе</li>
+              </a>
+            </ul>
+          </div>
+          <div class="backdrop"></div>
+        </nav>
       </div>
     </div>
   </div>
 </header>
 	<main>
-		<div class="container container--main">
-			<div class="form-page">
-				<img class="backlight-block" src="img/blacklight-block-img.png" alt="blacklight block img" />
-				<aside class="forms-block forms">
-					<div class="form form-1">
-						<button class="form--header">
-							<label class="form--switch" type="button" data-bs-toggle="collapse"
-								data-bs-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">
-								<input type="checkbox">
-								<span class="form--slider round"></span>
-							</label>
-							<div class="light-box-0 light-box" style="width: 100%; text-align: left;">
-								<label class="form--title">Infoblock oben Links</label>
-							</div>
-						</button>
-
-						<div class="form--items collapse" id="multiCollapseExample1">
-							<div class="form--item">
-								<label class="input--title">E-Mail:</label>
-								<div class="form--input">
-									<input class="input light-box-1 light-box" type="email" placeholder="info@mustermail.de"
-										required="required">
-									<img class="form--hint" id="form--hint1" aria-label="Thank you" src="img/hint-icon.png"
-										alt="hint icon">
-								</div>
-							</div>
-							<div class="form--item">
-								<label class="input--title">Telefon:</label>
-								<div class="form--input">
-									<input class="input light-box-2 light-box" type="tel" placeholder="+4901234567" required="required">
-									<img class="form--hint scale-subtle" id="form--hint2" src="img/hint-icon.png" alt="hint icon">
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="form form-2">
-						<button class="form--header">
-							<label class="form--switch" type="button" data-bs-toggle="collapse"
-								data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">
-								<input type="checkbox">
-								<span class="form--slider round"></span>
-							</label>
-							<div class="light-box-3 light-box" style="width: 100%; text-align: left;">
-								<label class="form--title">Firmenname</label>
-							</div>
-						</button>
-
-						<div class="form--items collapse" id="multiCollapseExample2">
-							<div class="form--item">
-								<label class="input--title">Firmenname:</label>
-								<div class="form--input">
-									<input class="input light-box-4 light-box" type="text" placeholder="Namen des Unternehmens"
-										required="required">
-									<img class="form--hint" id="form--hint3" src="img/hint-icon.png" alt="hint icon">
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="form form-3">
-						<button class="form--header">
-							<label class="form--switch" type="button" data-bs-toggle="collapse"
-								data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">
-								<input type="checkbox">
-								<span class="form--slider round"></span>
-							</label>
-							<div class="light-box-5 light-box" style="width: 100%; text-align: left;">
-								<label class="form--title">Menü</label>
-							</div>
-						</button>
-
-						<div class="form--items collapse" id="multiCollapseExample3">
-							<div class="form--item">
-								<label class="input--title">Menü 1:</label>
-								<div class="form--input">
-									<input class="input light-box-6 light-box" type="text" placeholder="Startseite" required="required">
-									<img class="form--hint" id="form--hint3" src="img/hint-icon.png" alt="hint icon">
-								</div>
-							</div>
-							<div class="form--item">
-								<label class="input--title">Menü 2:</label>
-								<div class="form--input">
-									<input class="input light-box-7 light-box" type="text" placeholder="Webhosting" required="required">
-									<img class="form--hint" id="form--hint4" src="img/hint-icon.png" alt="hint icon">
-								</div>
-							</div>
-							<div class="form--item">
-								<label class="input--title">Menü 3:</label>
-								<div class="form--input">
-									<input class="input light-box-8 light-box" type="text" placeholder="Kontakt" required="required">
-									<img class="form--hint" id="form--hint5" src="img/hint-icon.png" alt="hint icon">
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="form form-4">
-						<button class="form--header">
-							<label class="form--switch" type="button" data-bs-toggle="collapse"
-								data-bs-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample4">
-								<input type="checkbox">
-								<span class="form--slider round"></span>
-							</label>
-							<div class="light-box-9 light-box" style="width: 100%; text-align: left;">
-								<label class="form--title">Foto oben</label>
-							</div>
-						</button>
-
-						<div class="form--items collapse" id="multiCollapseExample4">
-							<div class="form--item input--with-button">
-								<label class="input--title">Foto:</label>
-								<div class="form--input">
-									<div class="input--with-icon ">
-										<input class="input light-box-10 light-box input-width" type="text" placeholder=""
-											required="required" readonly>
-										<i class=""></i>
-									</div>
-									<button class="form--button">Datei Aaswählen</button>
-									<img class="form--hint" id="form--hint6" src="img/hint-icon.png" alt="hint icon">
-								</div>
-							</div>
-							<div class="form--item">
-								<label class="input--title">Titel:</label>
-								<div class="form--input">
-									<input class="input input-width light-box-11 light-box" type="text" placeholder="10 Minuten Webseite"
-										required="required">
-									<img class="form--hint" id="form--hint7" src="img/hint-icon.png" alt="hint icon">
-								</div>
-							</div>
-							<div class="form--item">
-								<label class="input--title">Untertitel:</label>
-								<div class="form--input">
-									<input class="input input-width light-box-12 light-box" type="text"
-										placeholder="Deine Website einfach und zeitsparend oh" required="required">
-									<img class="form--hint" id="form--hint8" src="img/hint-icon.png" alt="hint icon">
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="form form-5">
-						<button class="form--header">
-							<label class="form--switch" type="button" data-bs-toggle="collapse"
-								data-bs-target="#multiCollapseExample5" aria-expanded="false" aria-controls="multiCollapseExample5">
-								<input type="checkbox">
-								<span class="form--slider round"></span>
-							</label>
-							<div class="light-box-13 light-box" style="width: 100%; text-align: left;">
-								<label class="form--title">Section 1</label>
-							</div>
-						</button>
-
-						<div class="form--items collapse section" id="multiCollapseExample5">
-							<div class="section--block section--block-title">
-								<div class="form--item input--with-button">
-									<label class="input--title">Icon:</label>
-									<div class="form--input">
-										<div class="input--with-icon ">
-											<input class="input input-width light-box-14 light-box" type="text" placeholder=""
-												required="required" readonly>
-											<i class="fa-solid fa-image"></i>
-										</div>
-										<button class="form--button">Icon Aaswählen</button>
-										<img class="form--hint" id="form--hint9" src="img/hint-icon.png" alt="hint icon">
-									</div>
-								</div>
-								<div class="form--item">
-									<label class="input--title">Titel:</label>
-									<div class="form--input">
-										<input class="input input-width light-box-15 light-box" type="text"
-											placeholder="IHRE VORTEILE BEI UNS" required="required">
-										<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
-									</div>
-								</div>
-								<div class="form--item">
-									<label class="input--title">Unteritel:</label>
-									<div class="form--input">
-										<input class="input input-width light-box-16 light-box" type="text"
-											placeholder="Kein Einarbeiten in die Materie notwending" required="required">
-										<img class="form--hint" id="form--hint11" src="img/hint-icon.png" alt="hint icon">
-									</div>
-								</div>
-							</div>
-							<div class="section--block section--block-1">
-								<div class="form--item">
-									<label class="input--title">Text:</label>
-									<div class="form--textarea">
-										<textarea class="textarea light-box-17 light-box">Wir stellen ihnen verschiedene Vorlagen zur Auswahl. Ob elegant oder schlicht, seriös oder aufsehenerregend,
-											die Designs sind modern und ansprechend. Wir sind uns sicher mit lizensierten und ansprechenden Bildern
-											begeistern Sie ihre Kunden. Teilen Sie ihren Website-Link voller Stolz und überzeugen Sie ihre Kunden auch
-											unterwegs. Alle Vorlagen sind für Smartphones optimiert.
-										</textarea>
-										<img class="form--hint" id="form--hint11" src="img/hint-icon.png" alt="hint icon">
-									</div>
-								</div>
-							</div>
-							<div class="section--block section--block-2">
-								<div class="form--item">
-									<label class="input--title">Text:</label>
-									<div class="form--textarea">
-										<textarea class="textarea light-box-18 light-box">Wir stellen ihnen verschiedene Vorlagen zur Auswahl. Ob elegant oder schlicht, seriös oder aufsehenerregend,
-											die Designs sind modern und ansprechend. Wir sind uns sicher mit lizensierten und ansprechenden Bildern
-											begeistern Sie ihre Kunden. Teilen Sie ihren Website-Link voller Stolz und überzeugen Sie ihre Kunden auch
-											unterwegs. Alle Vorlagen sind für Smartphones optimiert.
-										</textarea>
-										<img class="form--hint" id="form--hint11" src="img/hint-icon.png" alt="hint icon">
-									</div>
-								</div>
-							</div>
-							<div class="section--block section--block-3">
-								<div class="form--item">
-									<label class="input--title">Text:</label>
-									<div class="form--textarea">
-										<textarea class="textarea light-box-19 light-box">Wir stellen ihnen verschiedene Vorlagen zur Auswahl. Ob elegant oder schlicht, seriös oder aufsehenerregend,
-											die Designs sind modern und ansprechend. Wir sind uns sicher mit lizensierten und ansprechenden Bildern
-											begeistern Sie ihre Kunden. Teilen Sie ihren Website-Link voller Stolz und überzeugen Sie ihre Kunden auch
-											unterwegs. Alle Vorlagen sind für Smartphones optimiert.
-										</textarea>
-										<img class="form--hint" id="form--hint11" src="img/hint-icon.png" alt="hint icon">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="form form-6">
-						<button class="form--header">
-							<label class="form--switch" type="button" data-bs-toggle="collapse"
-								data-bs-target="#multiCollapseExample6" aria-expanded="false" aria-controls="multiCollapseExample6">
-								<input type="checkbox">
-								<span class="form--slider round"></span>
-							</label>
-							<div class="light-box-20 light-box" style="width: 100%; text-align: left;">
-								<label class="form--title">Section 2</label>
-							</div>
-						</button>
-
-						<div class="form--items collapse section" id="multiCollapseExample6">
-							<div class="section--block section--block-title">
-								<div class="form--item input--with-button">
-									<label class="input--title">Icon:</label>
-									<div class="form--input">
-										<div class="input--with-icon ">
-											<input class="input input-width light-box-21 light-box" type="text" placeholder=""
-												required="required" readonly>
-											<i class="fa-solid fa-image"></i>
-										</div>
-										<button class="form--button">Icon Aaswählen</button>
-										<img class="form--hint" id="form--hint9" src="img/hint-icon.png" alt="hint icon">
-									</div>
-								</div>
-								<div class="form--item">
-									<label class="input--title">Titel:</label>
-									<div class="form--input">
-										<input class="input input-width light-box-22 light-box" type="text"
-											placeholder="Die Erstellung mehrer Websites" required="required">
-										<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
-									</div>
-								</div>
-								<div class="form--item">
-									<label class="input--title">Unteritel:</label>
-									<div class="form--input">
-										<input class="input input-width light-box-23 light-box" type="text"
-											placeholder="Ganz leicht mit Step-by-Step erstellt" required="required">
-										<img class="form--hint" id="form--hint11" src="img/hint-icon.png" alt="hint icon">
-									</div>
-								</div>
-							</div>
-							<div class="section--block section--block-1">
-								<div class="form--item input--with-button">
-									<label class="input--title">Icon:</label>
-									<div class="form--input">
-										<div class="input--with-icon ">
-											<input class="input input-width light-box-24 light-box" type="text" placeholder=""
-												required="required" readonly>
-											<i class="fa-solid fa-image"></i>
-										</div>
-										<button class="form--button">Icon Aaswählen</button>
-										<img class="form--hint" id="form--hint9" src="img/hint-icon.png" alt="hint icon">
-									</div>
-								</div>
-								<div class="form--item">
-									<label class="input--title">Titel:</label>
-									<div class="form--input">
-										<input class="input input-width light-box-25 light-box" type="text" placeholder="Titel"
-											required="required">
-										<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
-									</div>
-								</div>
-								<div class="form--item">
-									<label class="input--title">E-Mail:</label>
-									<div class="form--input">
-										<input class="input input-width light-box-26 light-box" type="email"
-											placeholder="info@mustermail.de" required="required">
-										<img class="form--hint" id="form--hint1" aria-label="Thank you" src="img/hint-icon.png"
-											alt="hint icon">
-									</div>
-								</div>
-							</div>
-							<div class="section--block section--block-2">
-								<div class="form--item input--with-button">
-									<label class="input--title">Icon:</label>
-									<div class="form--input">
-										<div class="input--with-icon ">
-											<input class="input input-width light-box-27 light-box" type="text" placeholder=""
-												required="required" readonly>
-											<i class="fa-solid fa-image"></i>
-										</div>
-										<button class="form--button">Icon Aaswählen</button>
-										<img class="form--hint" id="form--hint9" src="img/hint-icon.png" alt="hint icon">
-									</div>
-								</div>
-								<div class="form--item">
-									<label class="input--title">Titel:</label>
-									<div class="form--input">
-										<input class="input input-width light-box-28 light-box" type="text" placeholder="Titel"
-											required="required">
-										<img class="form--hint" id="form--hint10" src="img/hint-icon.png" alt="hint icon">
-									</div>
-								</div>
-								<div class="form--item">
-									<label class="input--title">Telefon:</label>
-									<div class="form--input">
-										<input class="input input-width light-box-29 light-box" type="tel" placeholder="+4901234567"
-											required="required">
-										<img class="form--hint scale-subtle" id="form--hint2" src="img/hint-icon.png" alt="hint icon">
-									</div>
-								</div>
-							</div>
-							<div class="section--block section--block-3">
-								<div class="form--item input--with-button">
-									<label class="input--title">Foto:</label>
-									<div class="form--input">
-										<div class="input--with-icon ">
-											<input class="input input-width light-box-30 light-box" type="text" placeholder=""
-												required="required" readonly>
-											<i class=""></i>
-										</div>
-										<button class="form--button">Datei Aaswählen</button>
-										<img class="form--hint" id="form--hint6" src="img/hint-icon.png" alt="hint icon">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</aside>
-			</div>
-			<div class="highlights-boxes">
+		<section class="hero">
   <div class="container">
-    <div class="area-block-info-0" data-number="0" id="block-highlight-area"></div>
-    <div class="area-block-info-1" data-number="1" id="block-highlight-area"></div>
-    <div class="area-block-info-2" data-number="2" id="block-highlight-area"></div>
-    <div class="area-block-info-3" data-number="3" id="block-highlight-area"></div>
-    <div class="area-block-info-4" data-number="4" id="block-highlight-area"></div>
-    <div class="area-block-info-5" data-number="5" id="block-highlight-area"></div>
-    <div class="area-block-info-6" data-number="6" id="block-highlight-area"></div>
-    <div class="area-block-info-7" data-number="7" id="block-highlight-area"></div>
-    <div class="area-block-info-8" data-number="8" id="block-highlight-area"></div>
-    <div class="area-block-info-9" data-number="9" id="block-highlight-area"></div>
-    <div class="area-block-info-10" data-number="10" id="block-highlight-area"></div>
-    <div class="area-block-info-11" data-number="11" id="block-highlight-area"></div>
-    <div class="area-block-info-12" data-number="12" id="block-highlight-area"></div>
-    <div class="area-block-info-13" data-number="13" id="block-highlight-area"></div>
-    <div class="area-block-info-14" data-number="14" id="block-highlight-area"></div>
-    <div class="area-block-info-15" data-number="15" id="block-highlight-area"></div>
-    <div class="area-block-info-16" data-number="16" id="block-highlight-area"></div>
-    <div class="area-block-info-17" data-number="17" id="block-highlight-area"></div>
-    <div class="area-block-info-18" data-number="18" id="block-highlight-area"></div>
-    <div class="area-block-info-19" data-number="19" id="block-highlight-area"></div>
-    <div class="area-block-info-20" data-number="20" id="block-highlight-area"></div>
-    <div class="area-block-info-21" data-number="21" id="block-highlight-area"></div>
-    <div class="area-block-info-22" data-number="22" id="block-highlight-area"></div>
-    <div class="area-block-info-23" data-number="23" id="block-highlight-area"></div>
-    <div class="area-block-info-24" data-number="24" id="block-highlight-area"></div>
-    <div class="area-block-info-25" data-number="25" id="block-highlight-area"></div>
-    <div class="area-block-info-26" data-number="26" id="block-highlight-area"></div>
-    <div class="area-block-info-27" data-number="27" id="block-highlight-area"></div>
-    <div class="area-block-info-28" data-number="28" id="block-highlight-area"></div>
-    <div class="area-block-info-29" data-number="29" id="block-highlight-area"></div>
-    <div class="area-block-info-30" data-number="30" id="block-highlight-area"></div>
-    <div class="area-block-info-31" data-number="31" id="block-highlight-area"></div>
-    <div class="area-block-info-32" data-number="32" id="block-highlight-area"></div>
-    <div class="area-block-info-33" data-number="33" id="block-highlight-area"></div>
+    <div class="hero--body">
+      <h1 class="hero--title">
+        Инициация <span class="hero--title-decorated">преподавателей</span> и сопровождение практиков,
+        команд, <span class="hero--title-decorated hero--title-decorated-italic">проектов</span> в сфере образования
+      </h1>
+      <ul class="hero--services services">
+        <li class="services--item">начать преподавательскую деятельность</li>
+        <li class="services--item">создать архитектуру образовательного продукта/курса</li>
+        <li class="services--item">выстроить команду и процессы в образовательном проекте</li>
+      </ul>
+      <div class="btn-p">
+        <button class="btn hero--btn button-slanted button-fixedwidth">
+          <span class="button-slanted-content">Связаться</span>
+        </button>
+      </div>
+      <div class="hero--picture-shape">
+        <img src="img/1920/header/woman-image.png" alt="author picture" class="hero--img">
+      </div>
+      <div class="hero--achievement achievement">
+        <div class="achievement--items">
+          <h3 class="achievement--title">Подготовила более</h3>
+          <p class="achievement--descr">3000 практиков</p>
+        </div>
+        <div class="achievement--items">
+          <h3 class="achievement--title">Провела</h3>
+          <p class="achievement--descr">2000 часов занятий</p>
+        </div>
+        <div class="achievement--items">
+          <h3 class="achievement--title">Создала более</h3>
+          <p class="achievement--descr">50 обучений</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+		<section class="help">
+  <div class="container">
+    <div class="help-boby">
+      <h2 class="help--title">
+        <span class="help--title-decorated">Чем</span> я вам могу помочь?
+      </h2>
+      <div class="help--info-block hib">
+        <div class="hib--items">
+          <h3 class="info-block--title">Практикам, экспертам, специалистам</h3>
+          <ul class="list">
+            <li class="list-item">
+              Собрать персональную карту компетенций и настроить личную «оптику»
+            </li>
+            <li class="list-item">
+              Сформировать команду для проекта
+            </li>
+            <li class="list-item">
+              Выстроить образовательный маршрут и алгоритм движения по нему
+            </li>
+          </ul>
+        </div>
+        <div class="hib--items">
+          <h3 class="info-block--title">Практикам, экспертам, специалистам</h3>
+          <ul class="list">
+            <li class="list-item">
+              Собрать персональную карту компетенций и настроить личную «оптику»
+            </li>
+            <li class="list-item">
+              Сформировать команду для проекта
+            </li>
+            <li class="list-item">
+              Выстроить образовательный маршрут и алгоритм движения по нему
+            </li>
+          </ul>
+        </div>
+        <div class="hib--items">
+          <h3 class="info-block--title">Практикам, экспертам, специалистам</h3>
+          <ul class="list">
+            <li class="list-item">
+              Собрать персональную карту компетенций и настроить личную «оптику»
+            </li>
+            <li class="list-item">
+              Сформировать команду для проекта
+            </li>
+            <li class="list-item">
+              Выстроить образовательный маршрут и алгоритм движения по нему
+            </li>
+          </ul>
+        </div>
+        <div class="hib--items hib--items-btn">
+          <button class="help-section--button-buy btn">
+            <label>Заказать курс</label>
+          </button>
+        </div>
+      </div>
+      <button class="btn help--btn button-slanted button-fixedwidth">
+        <span class="button-slanted-content">Связаться</span>
+      </button>
+    </div>
+  </div>
+</section>
+		<section class="benefits">
+  <div class="container">
+    <div class="benefits--body">
+      <h2 class="benefits--title"><span class="benefits--title-decorated">Кому</span> могу быть <span
+          class="benefits--title-decorated">полезна?</span>
+      </h2>
+      <article class="benefits--blocks blocks">
+        <div class="blocks--img">
+          <img src="img/1920/benefits/01.png" alt="benefits image">
+        </div>
+        <div class="blocks--text">
+          <p class="blocks--text-decr">Если вы</p>
+          <h3 class="blocks-text--title">
+            Практикам, экспертам, специалистам
+          </h3>
+          <ul class="list">
+            <li class="list-item">
+              Не понимаете, в чем ваша ценность как эксперта и мучаетесь от синдрома самозванца
+            </li>
+            <li class="list-item">
+              Хотите передавать свой опыт, но не понимаете, как начать
+            </li>
+            <li class="list-item">
+              Желаете перейти из офлайна в онлайн
+            </li>
+            <li class="list-item">
+              Мечтаете о своём курсе, но не знаете, с кем и как мне это делать
+            </li>
+          </ul>
+        </div>
+      </article>
+      <article class="benefits--blocks blocks">
+        <div class="blocks--img">
+          <img src="img/1920/benefits/02.png" alt="benefits image">
+        </div>
+        <div class="blocks--text">
+          <p class="blocks--text-decr">Про вас?</p>
+          <h3 class="blocks-text--title">
+            Методистам, продюсерам, менеджерам по обучению
+          </h3>
+          <ul class="list">
+            <li class="list-item">
+              Не понимаю, все ли я делаю правильно в работе
+            </li>
+            <li class="list-item">
+              Как создавать курсы и сопровождать обучение
+            </li>
+            <li class="list-item">
+              Как вести преподавателей или экспертов
+            </li>
+          </ul>
+        </div>
+      </article>
+      <article class="benefits--blocks blocks">
+        <div class="blocks--img">
+          <img src="img/1920/benefits/03.png" alt="benefits image">
+        </div>
+        <div class="blocks--text">
+          <p class="blocks--text-decr">Расскажу</p>
+          <h3 class="blocks-text--title">
+            Практикам, экспертам, специалистам
+          </h3>
+          <ul class="list">
+            <li class="list-item">
+              Не понимаете, в чем ваша ценность как эксперта и мучаетесь от синдрома самозванца
+            </li>
+            <li class="list-item">
+              Хотите передавать свой опыт, но не понимаете, как начать
+            </li>
+            <li class="list-item">
+              Желаете перейти из офлайна в онлайн
+            </li>
+            <li class="list-item">
+              Мечтаете о своём курсе, но не знаете, с кем и как мне это делать
+            </li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+		<section class="how-work">
+  <div class="container">
+    <div class="how-work--body">
+      <h2 class="how-work--title"><span class="how-work--title-decorated">Об устройстве</span> сотрудничества</h2>
+      <div class="how-work--arrow">
+        <img src="img/1920/how-work/arrow.png" alt="">
+      </div>
+      <div class="how-work--step-block step-block">
+        <div class="step-block--items">
+          <div class="step-block--numb">
+            <img src="img/1920/how-work/01-icon.png" alt="01">
+          </div>
+          <h3 class="step-block--title">Знакомимся</h3>
+          <p class="step-block--text mb-b">
+            <span class="step-block--text-bold">Созвон и синхронизация</span> вашего запроса и моих компетенций<br />
+          </p>
+          <p class="step-block--text">
+            <span class="step-block--text-bold">Результат:</span> оффер с предложением задач,
+            которые мы можем взять
+          </p>
+        </div>
+        <div class="step-block--items">
+          <div class="step-block--numb">
+            <img src="img/1920/how-work/02-icon.png" alt="02">
+          </div>
+          <h3 class="step-block--title">Планируем маршрут сотрудничества</h3>
+          <p class="step-block--text">
+            Определяем объем и формат взаимодействия, описываем план действий и условия сотрудничества
+          </p>
+        </div>
+        <div class="step-block--items">
+          <div class="step-block--numb">
+            <img src="img/1920/how-work/03-icon.png" alt="03">
+          </div>
+          <h3 class="step-block--title">Сотрудничаем</h3>
+          <p class="step-block--text">
+            Созваниваемся, переписываемся, корректируем запрос и формируем результаты
+          </p>
+          <button class="btn step-block--btn button-slanted button-fixedwidth">
+            <span class="button-slanted-content">Связаться</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+		<section class="projects">
+  <div class="container">
+    <div class="projects--body">
+      <h2 class="projects--title"><span class="projects--title-decorated">Текущие</span> проекты</h2>
+      <div class="projects--project-block project-block">
+        <div class="project-block--items pb">
+          <div class="pb--img">
+            <img src="" alt="">
+          </div>
+          <h3 class="pb--title">Teachers Training</h3>
+          <div class="pb--inf">
+            <div class="pb--line"></div>
+            <p class="pb--about">Информация о курсах, очень бы хотелось</p>
+            <button class="btn pb--btn button-slanted button-fixedwidth">
+              <span class="button-slanted-content">Связаться</span>
+            </button>
+          </div>
+        </div>
+        <div class="project-block--items pb">
+          <div class="pb--img">
+            <img src="" alt="">
+          </div>
+          <h3 class="pb--title">Книжный клуб</h3>
+          <div class="pb--inf">
+            <div class="pb--line"></div>
+            <p class="pb--about">Информация о курсах, очень бы хотелось</p>
+            <button class="btn pb--btn button-slanted button-fixedwidth">
+              <span class="button-slanted-content">Связаться</span>
+            </button>
+          </div>
+        </div>
+        <div class="project-block--items pb">
+          <div class="pb--img">
+            <img src="" alt="">
+          </div>
+          <h3 class="pb--title">консультация, как навигатора</h3>
+          <div class="pb--inf">
+            <div class="pb--line"></div>
+            <p class="pb--about">Информация о курсах, очень бы хотелось</p>
+            <button class="btn pb--btn button-slanted button-fixedwidth">
+              <span class="button-slanted-content">Связаться</span>
+            </button>
+          </div>
+        </div>
+        <div class="project-block--items pb">
+          <div class="pb--img">
+            <img src="" alt="">
+          </div>
+          <h3 class="pb--title">Обучение</h3>
+          <div class="pb--inf">
+            <div class="pb--line"></div>
+            <p class="pb--about">Информация о курсах, очень бы хотелось</p>
+            <button class="btn pb--btn button-slanted button-fixedwidth">
+              <span class="button-slanted-content">Связаться</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+		<section class="recommend">
+  <div class="container container-no-p">
+    <div class="recommend--body">
+      <h2 class="recommend--title"> Проекты, которые <span class="recommend--title-decorated">я рекомендую!</span></h2>
+      <div class="recommend--project-block project-block">
+        <div class="recommend--items ri">
+          <div class="ri--img">
+            <img src="" alt="">
+          </div>
+          <div class="ri--inf">
+            <h3 class="ri--title">Курс Агни</h3>
+            <div class="ri--line"></div>
+            <p class="ri--about">Информация о курсах, очень бы хотелось</p>
+            <button class="btn ri--btn button-slanted button-fixedwidth">
+              <span class="button-slanted-content">Обучиться на курсе</span>
+            </button>
+          </div>
+        </div>
+        <div class="recommend--items ri">
+          <div class="ri--img">
+            <img src="" alt="">
+          </div>
+          <div class="ri--inf">
+            <h3 class="ri--title">Школа Навигаторов</h3>
+            <div class="ri--line"></div>
+            <p class="ri--about">Информация о курсах, очень бы хотелось</p>
+            <button class="btn ri--btn button-slanted button-fixedwidth">
+              <span class="button-slanted-content">Обучиться на курсе</span>
+            </button>
+          </div>
+        </div>
+        <div class="recommend--items ri">
+          <div class="ri--img">
+            <img src="" alt="">
+          </div>
+          <div class="ri--inf">
+            <h3 class="ri--title">Чистый язык</h3>
+            <div class="ri--line"></div>
+            <p class="ri--about">Информация о курсах, очень бы хотелось</p>
+            <button class="btn ri--btn button-slanted button-fixedwidth">
+              <span class="button-slanted-content">Обучиться на курсе</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="sale-block block-slanted block-fixedwidth">
+        <h4 class="block-slanted-content sale-block--title">Скидка 20% на любые из предложенных курсов</h4>
+        <p class="block-slanted-content sale-block--descr">По промокоду «sdfsdfsd», вы сможете получить скидку на любой
+          из предоставленных курсов</p>
+      </div>
+    </div>
+  </div>
+</section>
+		<section class="about">
+  <div class="container">
+    <div class="about--body">
+      <h2 class="about--title">Немного обо мне</h2>
+      <div class="about--inf-block about-ib">
+        <div class="about-ib--img" style="background: url(img/1920/about/about-img.png) no-repeat center / cover;">
+        </div>
+        <div class="about-ib--inf">
+          <h3 class="about-ib--title">ДАРЬЯ МАСЛЕННИКОВА</h3>
+          <p class="about-ib-descr">«Директор по образовательному продукту OTUS</p>
+          <div class="about-id--line"></div>
+          <p class="about-ib-text">
+            Навигатор в области образования, учитель учителей, архитектор образовательного опыта, преподаватель и спикер
+            конференций, участник пространства самонаправленного образования У. Дача в Кратово
+          </p>
+          <p class="about-ib-text about-id-text-mb">
+            Интересы: Методология образования, самонаправленное образование, методика преподавания
+            и системно-деятельностный подход».
+          </p>
+          <button class="btn about-ib--btn button-slanted button-fixedwidth">
+            <span class="button-slanted-content">Записаться на курс</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+		<section class="comments">
+  <div class="container">
+    <!-- Slider main container -->
+    <div class="swiper">
+      <h2 class="comments--title">Отзывы и социальное доверие</h2>
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="slide--body-p">
+            <div class="slide-body">
+              <div class="slide--top">
+                <div class="slide--img">
+                  <img src="img/Rectangle 5.png" alt="people photo">
+                </div>
+                <div class="slide--top-inf">
+                  <p class="names">Александра</p>
+                  <p class="course-names">Курс для изучения англ. языка</p>
+                </div>
+              </div>
+              <h3 class="slide--title">Довольна не только я, но и клиенты</h3>
+              <p class="slide--text">
+                Как же мне повезло, что я обратилась именно к этому человеку. Огромное спасибо за проделанную работу.
+                Обраращусь ещё не раз.ssssssssssssssssssssssssssssssssssssssssjjjj sdfsda ghjg
+              </p>
+              <a class="slider--link">Подробнее про курс</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide--body-p">
+            <div class="slide-body">
+              <div class="slide--top">
+                <div class="slide--img">
+                  <img src="img/Rectangle 5.png" alt="people photo">
+                </div>
+                <div class="slide--top-inf">
+                  <p class="names">Александра</p>
+                  <p class="course-names">Курс для изучения англ. языка</p>
+                </div>
+              </div>
+              <h3 class="slide--title">Довольна не только я, но и клиенты</h3>
+              <p class="slide--text">
+                Как же мне повезло, что я обратилась именно к этому человеку. Огромное спасибо за проделанную работу.
+                Обраращусь ещё не раз.
+              </p>
+              <a class="slider--link">Подробнее про курс</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide--body-p">
+            <div class="slide-body">
+              <div class="slide--top">
+                <div class="slide--img">
+                  <img src="img/Rectangle 5.png" alt="people photo">
+                </div>
+                <div class="slide--top-inf">
+                  <p class="names">Александра</p>
+                  <p class="course-names">Курс для изучения англ. языка</p>
+                </div>
+              </div>
+              <h3 class="slide--title">Довольна не только я, но и клиенты</h3>
+              <p class="slide--text">
+                Как же мне повезло, что я обратилась именно к этому человеку. Огромное спасибо за проделанную работу.
+                Обраращусь ещё не раз.
+              </p>
+              <a class="slider--link">Подробнее про курс</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev slider-btn"></div>
+      <div class="swiper-button-next slider-btn"></div>
+    </div>
+  </div>
+</section>
+		<div class="form-section">
+  <div class="container container-no-p">
+    <div class="form--body">
+      <div class="form-block block-slanted block-fixedwidth">
+        <div class="form-block--left block-slanted-content">
+          <h4 class="form-block--title ">Возникли вопросы?</h4>
+          <p class="form-block--descr">Оставте заявку, и мы свяжемся с вами в ближайшее время!</p>
+        </div>
+        <div class="form-block--right block-slanted-content">
+          <form class="form" action="">
+            <input class="form--input input-name" type="text" name="" id="" placeholder="Имя" required>
+            <input class="form--input input-mail" type="email" name="" id="" placeholder="Эл. почта" required>
+            <button class="form--button" type="submit" name="" id="">Оставить заявку</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-		</div>
+		<div class="connect">
+  <div class="container">
+    <div class="connect-body">
+      <h2 class="connect--title">
+        Как связаться с нами?
+      </h2>
+      <div class="connect--contacts-block">
+        <div class="connect--items">
+          <label class="connect--dsecr">Адрес</label>
+          <p class="connect--text">г. Москва, Соловьиная Роща, дом 8, офис 21</p>
+        </div>
+        <div class="connect--items">
+          <label class="connect--dsecr">Телефон</label>
+          <a href="tel:+74992831247" class="connect--text">+7 499 283-12-47</a>
+        </div>
+        <div class="connect--items">
+          <label class="connect--dsecr">Эл. почта</label>
+          <a href="mailto:sir.srwq@study.ru" class="connect--text">sir.srwq@study.ru</a>
+        </div>
+        <div class="connect--items">
+          <label class="connect--dsecr">Режим работы</label>
+          <p class="connect--text">с 09:00 до 23:00, ежедневно</p>
+        </div>
+        <div class="social">
+          <a href="#" class="social--item social--item-i">
+            <img src="img/1920/socials/instagram.svg" alt="instagram">
+          </a>
+          <a href="#" class="social--item social--item-v">
+            <img src="img/1920/socials/vk.svg" alt="vkontakte">
+          </a>
+          <a href="#" class="social--item social--item-f">
+            <img src="img/1920/socials/facebook.svg" alt="facebook">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 	</main>
-	<footer></footer>
+	<footer class="footer">
+  <div class="container">
+    <div class="footer--body">
+      <div class="footer--top">
+        <div class="footer--img">
+          <img src="" alt="photo">
+        </div>
+        <div class="footer--right-blok">
+          <nav class="footer--nav nav">
+            <ul class="nav--links footer--links">
+              <li class="nav--link nav--link1">
+                <label>Контакты</label>
+              </li>
+              <li class="nav--link nav--link2">
+                <label>Обо мне</label>
+              </li>
+              <li class="nav--link nav--link3">
+                <label>Отзывы</label>
+              </li>
+              <li class="nav--link nav--link4">
+                <label>О курсе</label>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer--contacts contacts">
+            <a href="tel:+79995272134" class="contacts--phone">+7&nbsp;999 527-21-34</a>
+            <a href="mailto:sir.srwq@study.ru" class="contacts--mail">sir.srwq@study.ru</a>
+          </div>
+        </div>
+        <div class="footer--left-blok">
+          <div class="social">
+            <a href="#" class="social--item social--item-i">
+              <img src="img/1920/socials/instagram.svg" alt="instagram">
+            </a>
+            <a href="#" class="social--item social--item-v">
+              <img src="img/1920/socials/vk.svg" alt="vkontakte">
+            </a>
+            <a href="#" class="social--item social--item-f">
+              <img src="img/1920/socials/facebook.svg" alt="facebook">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer--bottom">
+        <div class="footer-b--right-blok">
+          <div class="pdflinks">
+            <a href="#" class="politicconf">Политика конфиденциальности</a>
+            <a href="#" class="terms">Пользовательское соглашение</a>
+          </div>
+        </div>
+        <div class="footer-b--left-blok">
+          <a class="up-link">
+            <img src="img/up-icon.png" alt="up icon">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
 		integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
 	</script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
 		integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
 	</script>
-	<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
 		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
 	<script src="js/app.min.js"></script>
 </body>
 
