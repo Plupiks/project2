@@ -515,7 +515,7 @@ a:hover {
 
 .list {
   display: flex;
-  list-style-type: "🞄   ";
+  list-style-type: disc;
   flex-direction: column;
   gap: 15px;
   padding-left: 30px;
